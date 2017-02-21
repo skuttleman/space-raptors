@@ -1,4 +1,5 @@
 ﻿#pragma strict
+
 public var zoomSpeed :float;
 public var positionSpeed :Vector2;
 public var startingBounds :GameObject;
