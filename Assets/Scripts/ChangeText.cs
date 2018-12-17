@@ -5,8 +5,8 @@ using System.Collections;
 
 public class ChangeText : MonoBehaviour {
 
-	string[] storyText;
-	Text UIText;
+	public string[] storyText;
+	public Text UIText;
 
 	private int currentLine;
 	private bool keyPress;
@@ -24,7 +24,7 @@ public class ChangeText : MonoBehaviour {
 		}
 	}
 
-	IEnumerable AnimateText (string text) {
+	IEnumerator AnimateText (string text) {
 		for (int i = 0; i < text.Length; i++) {
 			UIText.text += text[i];
 			yield return new WaitForSeconds(0.05f);
@@ -34,7 +34,7 @@ public class ChangeText : MonoBehaviour {
 		Next();
 	}
 
-	IEnumerable KeyPressed () {
+	IEnumerator KeyPressed () {
 		keyPress = true;
 		StopCoroutine("AnimateText");
 		if (UIText.text.Length < storyText[currentLine].Length) {

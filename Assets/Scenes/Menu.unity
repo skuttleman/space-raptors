@@ -207,7 +207,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 625601292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2a8eaa5f9dec194680134cc2a8ed22e, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f04378c4b0e40ecbd69d4297235578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &762187081
@@ -513,7 +513,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625601294}
+      - m_Target: {fileID: 0}
         m_MethodName: MenuChoice
         m_Mode: 3
         m_Arguments:
@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625601294}
+      - m_Target: {fileID: 0}
         m_MethodName: MenuChoice
         m_Mode: 3
         m_Arguments:
